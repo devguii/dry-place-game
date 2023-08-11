@@ -12,7 +12,7 @@ class Player {
 
 const player = new Player();
 
-const clickButton = document.getElementById("btn") as HTMLDivElement | null;
+const clickButton = document.getElementById("btn") as HTMLButtonElement | null;
 if (clickButton) {
   clickButton.addEventListener("click", () => {
     player.click();
