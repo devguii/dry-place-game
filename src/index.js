@@ -4,11 +4,11 @@ var Player = /** @class */ (function () {
     }
     Player.prototype.click = function () {
         console.log("click done");
+        this.counterNumber++;
         this.update();
     };
     Player.prototype.update = function () {
         this.updateUI();
-        this.counterNumber++;
     };
     Player.prototype.updateUI = function () {
         console.log("updateUI");

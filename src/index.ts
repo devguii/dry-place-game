@@ -5,12 +5,12 @@ class Player {
 
   click() {
     console.log("click done");
+    this.counterNumber++;
     this.update();
   }
 
   update() {
     this.updateUI();
-    this.counterNumber++;
   }
 
   updateUI() {
