@@ -1,11 +1,21 @@
 var Player = /** @class */ (function () {
     function Player() {
+        this.counterNumber = 0;
     }
     Player.prototype.click = function () {
         console.log("click done");
+        this.update();
     };
-    Player.prototype.update = function () { };
-    Player.prototype.updateUI = function () { };
+    Player.prototype.update = function () {
+        this.updateUI();
+        this.counterNumber++;
+    };
+    Player.prototype.updateUI = function () {
+        console.log("updateUI");
+        var counter = document.getElementById("counter");
+        counter.innerHTML = this.counterNumber.toString();
+        console.log(this.counterNumber);
+    };
     return Player;
 }());
 var player = new Player();
